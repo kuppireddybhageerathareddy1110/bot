@@ -8,6 +8,7 @@ import nltk
 import spacy
 import re
 import string
+import os
 
 app = Flask(__name__)
 
@@ -41,5 +42,12 @@ def chat():
     response = get_best_match(user_query)
     return jsonify({"response": response})
 
+# if __name__ == "__main__":
+#     app.run(debug=True)
+
+
+
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Default to 5000 if no PORT is found
+    app.run(host="0.0.0.0", port=port)
