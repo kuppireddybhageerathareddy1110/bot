@@ -8,6 +8,7 @@
 # import spacy
 # import re
 # import string
+<<<<<<< HEAD
 
 # app = Flask(__name__)
 
@@ -53,6 +54,8 @@
 # import spacy
 # import re
 # import string
+=======
+>>>>>>> 949f8d36ac44403c6451148ef07ebd6b89ace1b5
 # import os
 # import spacy
 # import subprocess
@@ -101,11 +104,17 @@
 
 
 
+<<<<<<< HEAD
 
 # if __name__ == "__main__":
 #     port = int(os.environ.get("PORT", 5000))  # Default to 5000 if no PORT is found
 #     app.run(host="0.0.0.0", port=port)
 
+=======
+# if __name__ == "__main__":
+#     port = int(os.environ.get("PORT", 10000))  # Default to 10000 if no PORT is found
+#     app.run(host="0.0.0.0", port=port, debug=True)
+>>>>>>> 949f8d36ac44403c6451148ef07ebd6b89ace1b5
 from flask import Flask, request, render_template, jsonify
 import os
 import torch
